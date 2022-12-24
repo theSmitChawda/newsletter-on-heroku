@@ -38,10 +38,10 @@ app.post("/",function(req,res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us8.api.mailchimp.com/3.0/lists/13fdd8349d";
+    const url = "https://us8.api.mailchimp.com/3.0/lists/13--------";
     const options = {
         method: "POST",
-        auth:"root-user-7789657:05ed56a31f2a033103031bde2859ce80-us8"
+        auth:"root-user-7789657:05ed###bde2859ce80-us8"
     }
 
     const request = https.request(url, options, function(response){
@@ -62,6 +62,3 @@ app.post("/",function(req,res){
 
 });
 
-// 05ed56a31f2a033103031bde2859ce80-us8
-
-// 13fdd8349d
